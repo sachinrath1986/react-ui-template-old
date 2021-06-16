@@ -1,0 +1,3 @@
+@function get($map, $keys...) {
+    @return map-get($map, nth($keys, 1));
+}

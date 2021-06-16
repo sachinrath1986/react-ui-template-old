@@ -1,0 +1,6 @@
+{
+    "AUTH.LOGIN.TITLE": "Login Account",
+    "AUTH.GENERAL.FORGOT_BUTTON": "Forgot Password",
+    "AUTH.VALIDATION.REQUIRED_FIELD": "Required field",
+    "AUTH.VALIDATION.INVALID_LOGIN": "The login detail is incorrect"
+}

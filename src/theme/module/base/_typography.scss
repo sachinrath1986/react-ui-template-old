@@ -1,0 +1,22 @@
+.font-size-h1 {
+    font-size: 2rem !important;
+}
+
+.text-muted {
+    color: $text-muted !important;
+}
+
+.font-weight-bold {
+    font-weight: 500 !important;
+}
+
+.text-dark-50 {
+    color: $gray-600 !important;
+}
+
+.text-hover-primary {
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    &:hover {
+        color: $primary !important;
+    }
+}

@@ -1,0 +1,27 @@
+.alert {
+    background-color: $danger-light;
+    border-color: transparent;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    padding: 1.5rem 2rem;
+    .alert-text {
+        border-color: transparent;
+        -webkit-align-self: center;
+        align-self: center;
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+    }
+    &.alert-light-danger {
+        .alert-text {
+            color: $danger;
+        }
+    }
+    &.alert-light-info {
+        background-color: $info-light;
+        .alert-text {
+            color: $info;
+        }
+    }
+}

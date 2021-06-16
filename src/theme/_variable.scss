@@ -1,0 +1,118 @@
+// Root Font Sizes
+$root-font-size: 13px; // Root font size for desktop mode
+$root-font-size-lg: 13px; // Root font size for tablet mode
+$root-font-size-md: 12px; // Root font size for mobile mode
+
+// Page Background Color
+$page-bg: #eef0f8 !default;
+
+$body-color: #3f4254;
+
+// Font family
+$font-family-base: Poppins, Helvetica, "sans-serif" !default;
+
+// Font weight
+$font-weight-base: 400;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+$media-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+) !default;
+
+// Black color
+$black: #000000 !default;
+
+// White color
+$white: #ffffff !default;
+
+// Primary colors
+$primary: #3699ff !default;
+$primary-hover: #187de4 !default;
+$primary-light: #e1f0ff !default;
+$primary-inverse: $white !default;
+
+// Gray colors
+$gray-100: #f3f6f9 !default;
+$gray-200: #ebedf3 !default;
+$gray-300: #e4e6ef !default;
+$gray-400: #d1d3e0 !default;
+$gray-500: #b5b5c3 !default;
+$gray-600: #7e8299 !default;
+$gray-700: #5e6278 !default;
+$gray-800: #3f4254 !default;
+$gray-900: #181c32 !default;
+
+$gray-svg: #494b74 !default;
+
+// Info colors
+$info: #8950fc !default;
+$info-hover: #7337ee !default;
+$info-light: #eee5ff !default;
+$info-inverse: $white !default;
+
+// Warning colors
+$warning: #ffa800 !default;
+$warning-hover: #ee9d01 !default;
+$warning-light: #fff4de !default;
+$warning-inverse: $white !default;
+
+// Danger colors
+$danger: #f64e60 !default;
+$danger-hover: #ee2d41 !default;
+$danger-light: #ffe2e5 !default;
+$danger-inverse: $white !default;
+
+// Dark colors
+$dark: $gray-900 !default;
+$dark-75: $gray-800 !default;
+$dark-65: $gray-700 !default;
+$dark-50: $gray-600 !default;
+$dark-25: $gray-400 !default;
+
+// Text muted
+$text-muted: $gray-500 !default;
+
+// Secondary colors
+$secondary: $gray-300 !default;
+$secondary-hover: darken($gray-300, 4%) !default;
+$secondary-light: $gray-200 !default;
+$secondary-inverse: $dark-75 !default;
+
+// Success colors
+$success: #1bc5bd !default; // Bootstrap variable
+$success-hover: #0bb7af !default; // Custom variable
+$success-light: #c9f7f5 !default; // Custom variable
+$success-inverse: $white !default; // Custom variable
+
+// Light colors
+$light: $gray-100 !default; // Bootstrap variable
+$light-hover: $gray-300 !default; // Custom variable
+$light-light: $gray-100 !default; // Custom variable
+$light-inverse: $gray-600 !default; // Custom variable
+
+// Spinner
+$spinner-config: (
+    size: 1.5rem,
+    size-sm: 1.25rem,
+    size-lg: 2rem,
+) !default;
+
+$theme-colors: (
+    "white": $white,
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+) !default;

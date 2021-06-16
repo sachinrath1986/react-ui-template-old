@@ -1,0 +1,57 @@
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.form-group {
+    margin-bottom: 1.75rem;
+    .message-container {
+        margin-top: 0.25rem;
+        .message-text {
+            color: #f64e60;
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+    }
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1.3rem + 2px);
+    padding: 0.65rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $gray-800;
+    background-color: $white;
+    background-clip: padding-box;
+    border: 1px solid $gray-300;
+    border-radius: 0.42rem;
+    box-shadow: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    outline: none !important;
+    &.form-control-solid {
+        background-color: $gray-100;
+        border-color: $gray-100;
+        color: $gray-800;
+        transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+        &:active,
+        &:focus {
+            background-color: $gray-200;
+            border-color: $gray-200;
+            color: $gray-800;
+            transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+            box-shadow: none !important;
+        }
+    }
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+    }
+}

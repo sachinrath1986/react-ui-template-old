@@ -1,0 +1,25 @@
+.Login {
+    &--aside {
+        background-image: url(../../assets/media/bg/bg-4.jpg);
+    }
+
+    &--content {
+    }
+}
+
+// Desktop view
+@include media-breakpoint-up(lg) {
+    .Login {
+        &--aside {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        &--content {
+            .form {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    }
+}
