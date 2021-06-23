@@ -15,7 +15,7 @@ const AsideMenu = () => {
     const menus = useSelector(state => state.app.menus) || [];
 
     return (
-        <div className="aside-menu my-4">
+        <div className="aside-menu">
             <AsideMenuList menus={menus} />
         </div>
     );

@@ -1,5 +1,6 @@
 .aside-menu {
     background-color: #1e1e2d;
+    flex: 1;
     .menu-nav {
         margin: 0;
         list-style: none;
@@ -11,7 +12,6 @@
             float: none;
             padding: 0;
             .menu-link {
-                background-color: #1b1b28;
                 .menu-text {
                     color: $white;
                 }
@@ -30,6 +30,7 @@
                 position: relative;
                 outline: none;
                 &:hover {
+                    background-color: #1b1b28;
                     .menu-text {
                         color: $white;
                     }
@@ -62,6 +63,7 @@
                     align-items: center;
                     flex-grow: 1;
                     padding: 0;
+                    overflow: hidden;
                 }
             }
         }

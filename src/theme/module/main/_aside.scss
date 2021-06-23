@@ -1,4 +1,68 @@
 .aside {
     background-color: #1e1e2d;
     width: 265px;
+    z-index: 999;
+    transition: 0.5s all ease-in-out;
+    * {
+        transition: 0.5s all ease-in-out;
+    }
+
+    &.isCollapsed {
+        width: 60px;
+
+        .brand {
+            padding: 0 8px;
+
+            &--logo {
+                font-size: 1em;
+            }
+
+            &--toggle {
+                transform: rotateY(180deg);
+                .svg-icon {
+                    svg {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+
+        .aside-menu {
+            .menu-link {
+                padding: 9px 16px !important;
+            }
+            .menu-text {
+                width: 0;
+            }
+        }
+
+        .logout-ct {
+            span {
+                overflow: hidden;
+                width: 0;
+            }
+        }
+    }
+
+    .logout-ct {
+        height: 50px;
+        font-size: 1.2em;
+        color: #a2a3b7;
+        border-top: 1px solid #232327;
+        cursor: pointer;
+
+        svg g [fill] {
+            fill: $gray-svg;
+        }
+
+        &:hover {
+            background-color: #1b1b28;
+            color: $white;
+
+            svg g [fill] {
+                fill: $primary;
+            }
+        }
+    }
 }

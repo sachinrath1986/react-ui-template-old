@@ -4,7 +4,8 @@ import { handleLoadAppMenu } from "redux/handlers/app";
 export const actionTypes = {
     FetchSideBarMenu: "[FetchSidebar] Action",
     GetSideBarMenu: "[GetSidebar] Action",
-    SetSideBarMenu: "[SetSidebar] Action"
+    SetSideBarMenu: "[SetSidebar] Action",
+    SetIsSideBarCollapsed: "[SetSideBarCollapseState] Action"
 }
 
 export const fetchSidebarMenu = () => ({
@@ -17,8 +18,14 @@ export const setSidebarMenu = (menus) => ({
     menus
 });
 
+export const setIsSidebarCollapsed = (isSidebarCollapsed) => ({
+    type: actionTypes.SetIsSideBarCollapsed,
+    isSidebarCollapsed
+});
+
 const initialState = {
-    menus: []
+    menus: [],
+    isSidebarCollapsed: false
 };
 
 
@@ -26,7 +33,10 @@ export const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.SetSideBarMenu:
             const { menus } = action;
-            return { menus };
+            return { ...state, menus };
+        case actionTypes.SetIsSideBarCollapsed:
+            const { isSidebarCollapsed } = action;
+            return { ...state, isSidebarCollapsed };
         default:
             return state;
     }
