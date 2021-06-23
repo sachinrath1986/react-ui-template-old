@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-ui-template/static/css/main.f5aa83df.chunk.css",
+    "main.js": "/react-ui-template/static/js/main.c6102bc2.chunk.js",
+    "main.js.map": "/react-ui-template/static/js/main.c6102bc2.chunk.js.map",
+    "runtime-main.js": "/react-ui-template/static/js/runtime-main.f8179498.js",
+    "runtime-main.js.map": "/react-ui-template/static/js/runtime-main.f8179498.js.map",
+    "static/js/2.d5af7557.chunk.js": "/react-ui-template/static/js/2.d5af7557.chunk.js",
+    "static/js/2.d5af7557.chunk.js.map": "/react-ui-template/static/js/2.d5af7557.chunk.js.map",
+    "static/js/3.9932b466.chunk.js": "/react-ui-template/static/js/3.9932b466.chunk.js",
+    "static/js/3.9932b466.chunk.js.map": "/react-ui-template/static/js/3.9932b466.chunk.js.map",
+    "index.html": "/react-ui-template/index.html",
+    "static/css/main.f5aa83df.chunk.css.map": "/react-ui-template/static/css/main.f5aa83df.chunk.css.map",
+    "static/js/2.d5af7557.chunk.js.LICENSE.txt": "/react-ui-template/static/js/2.d5af7557.chunk.js.LICENSE.txt",
+    "static/media/Angle-double-left.217d7106.svg": "/react-ui-template/static/media/Angle-double-left.217d7106.svg",
+    "static/media/Box3.b02a4052.svg": "/react-ui-template/static/media/Box3.b02a4052.svg",
+    "static/media/Door-open.2ed3f761.svg": "/react-ui-template/static/media/Door-open.2ed3f761.svg",
+    "static/media/Home.e0e99612.svg": "/react-ui-template/static/media/Home.e0e99612.svg",
+    "static/media/User.898f25aa.svg": "/react-ui-template/static/media/User.898f25aa.svg",
+    "static/media/index.scss": "/react-ui-template/static/media/bg-4.ae9a8f9c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8179498.js",
+    "static/js/2.d5af7557.chunk.js",
+    "static/css/main.f5aa83df.chunk.css",
+    "static/js/main.c6102bc2.chunk.js"
+  ]
+}
