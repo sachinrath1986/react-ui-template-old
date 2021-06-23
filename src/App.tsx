@@ -9,7 +9,7 @@ import { I18nProvider } from './core/i18n/i18nProvider';
 const App = () => {
  
   return (
-    <BrowserRouter basename="/build">
+    <BrowserRouter>
       <AppThemeProvider>
         <AuthInit>
           <I18nProvider>

@@ -2,6 +2,7 @@
   "name": "react-ui-template",
   "version": "0.1.5",
   "private": true,
+  "homepage": "https://avinash-wissen.github.io/react-ui-template/",
   "dependencies": {
     "@babel/core": "7.12.3",
     "@material-ui/core": "^4.11.4",
@@ -45,6 +46,7 @@
     "file-loader": "6.1.1",
     "formik": "^2.2.8",
     "fs-extra": "^9.0.1",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "4.5.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "26.6.0",
@@ -93,6 +95,8 @@
   "scripts": {
     "commit": "cz",
     "release": "standard-version",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
     "release:major": "standard-version --release-as major",
