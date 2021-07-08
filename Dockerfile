@@ -1,9 +1,15 @@
-FROM nginx:alpine
 
-COPY nginx.conf /etc/nginx/nginx.conf
+# Step 1
 
-RUN rm -rf /usr/share/nginx/html/*
+FROM node:10-alpine as build-step
+RUN mkdir /app
+WORKDIR /app
+COPY package.json /app
+RUN npm install
+COPY . /app
+RUN npm run build
 
-WORKDIR /usr/share/nginx/html
+# Stage 2
 
-COPY dist/ .
+FROM nginx:1.17.1-alpine
+COPY --from=build-step /app/build /usr/share/nginx/html
