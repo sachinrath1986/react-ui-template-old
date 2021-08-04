@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main renders snapshots when isSidebarCollapsed=false 1`] = `
+<div>
+  <div
+    class="aside d-flex flex-column flex-row-auto isCollapsed"
+  >
+    <div>
+      Mock Brand component
+    </div>
+    <div>
+      Mock AsideMenu component
+    </div>
+    <div
+      class="logout-ct d-flex flex-center"
+    >
+      <span>
+        Logout
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Main renders snapshots when isSidebarCollapsed=true 1`] = `
+<div>
+  <div
+    class="aside d-flex flex-column flex-row-auto isCollapsed"
+  >
+    <div>
+      Mock Brand component
+    </div>
+    <div>
+      Mock AsideMenu component
+    </div>
+    <div
+      class="logout-ct d-flex flex-center"
+    >
+      <span>
+        Logout
+      </span>
+    </div>
+  </div>
+</div>
+`;

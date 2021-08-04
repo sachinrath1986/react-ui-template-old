@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main renders snapshots 1`] = `
+<div>
+  <div
+    class="d-flex flex-column flex-root"
+  >
+    <div
+      class="d-flex flex-row flex-column-fluid page"
+    >
+      <div>
+        Mock Aside component
+      </div>
+      I am dashboard
+    </div>
+  </div>
+</div>
+`;
