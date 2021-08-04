@@ -103,6 +103,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "test:coverage": "npm test -- -u --coverage --watchAll=false",
+    "test:e2e": "cypress open",
     "androidbuild": "node scripts/androidbuild.js",
     "generate-apk": "node scripts/generate-apk.js"
   },
@@ -187,6 +188,7 @@
     "@testing-library/react": "^11.2.7",
     "@types/react-router-dom": "^5.1.7",
     "commitizen": "^4.2.3",
+    "cypress": "^8.1.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^6.0.0",
     "jest": "^26.6.0",
