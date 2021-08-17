@@ -5,7 +5,7 @@ const AnimatedRouter = ({
     children
 }) => {
 
-    const wrapper = useRef();
+    const wrapper = useRef(null);
 
     useEffect(() => {
         const wrapperDiv = wrapper.current;

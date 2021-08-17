@@ -10,7 +10,7 @@ import Login from "./auth/pages/Login";
 const Routes = () => {
 
     const { isAuthorized } = useSelector(
-        ({ auth }) => ({
+        ({ auth }: any) => ({
             isAuthorized: auth.user != null,
         }),
         shallowEqual

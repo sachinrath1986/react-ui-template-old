@@ -12,7 +12,7 @@ const Aside = () => {
 
     const history = useHistory();
 
-    const isSideBarCollapsed = useSelector(state => state.app.isSidebarCollapsed);
+    const isSideBarCollapsed = useSelector((state: any) => state.app.isSidebarCollapsed);
 
     const logout = () => {
         history.push('/auth/login');

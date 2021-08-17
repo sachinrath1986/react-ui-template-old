@@ -2,20 +2,20 @@ import { put, takeLatest } from "@redux-saga/core/effects";
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
-export const actionTypes = {
+export const actionTypes: any = {
     Login: "[Login] Action",
     Logout: "[Logout] Action",
     SetUser: "[Set User] Action"
 }
 
-const initialAuthState = {
+const initialAuthState: any = {
     user: undefined,
     authToken: undefined
 };
 
 export const reducer = persistReducer(
     { storage, key: "v1-auth", whitelist: ["authToken", "user"] },
-    (state = initialAuthState, action) => {
+    (state = initialAuthState, action: any) => {
         switch (action.type) {
             case actionTypes.Login: {
                 const { authToken } = action.payload;
@@ -28,7 +28,9 @@ export const reducer = persistReducer(
             case actionTypes.SetUser: {
 
                 const { user } = action.payload;
-                return { ...state, user: 'admin@demo.com' };
+                return {
+                    ...(state as any), user: 'admin@demo.com'
+                };
             }
 
             default:
