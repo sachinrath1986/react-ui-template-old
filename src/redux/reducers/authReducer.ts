@@ -27,7 +27,7 @@ export const reducer = persistReducer(
 
             case actionTypes.SetUser: {
 
-                const { user } = action.payload;
+                // const { user } = action.payload;
                 return {
                     ...(state as any), user: 'admin@demo.com'
                 };
