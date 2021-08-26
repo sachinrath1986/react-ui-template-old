@@ -1,7 +1,11 @@
 
 const shell = require('shelljs')
 
-shell.exec('android_build.sh', function(err){
+console.log(shell.pwd());
+
+shell.echo("Building android app...");
+
+shell.exec(`${shell.pwd()}/scripts/build-android.sh`, function(err){
     if(err){
       console.log((err));
       process.exit(0);
