@@ -4,8 +4,9 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.12.3",
-    "@capacitor/android": "^2.4.7",
-    "@capacitor/core": "3.1.2",
+    "@capacitor/android": "^2.4.9",
+    "@capacitor/core": "^2.4.9",
+    "@ionic/react": "^5.5.0",
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.4",
@@ -105,8 +106,9 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "androidbuild": "node scripts/androidbuild.js",
-    "generate-apk": "node scripts/generate-apk.js"
+    "build:android": "node scripts/build-android.js",
+    "apk:android": "node scripts/build-apk.js",
+    "open:android": "npx cap open android"
   },
   "eslintConfig": {
     "extends": [
@@ -184,13 +186,14 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "2.4.7",
+    "@capacitor/cli": "^2.4.9",
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
     "@types/react-router-dom": "^5.1.7",
     "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^6.0.0",
+    "react-scripts": "4.0.3",
     "sass": "^1.34.0",
     "semantic-release": "^17.4.2",
     "standard-version": "^9.2.0"
