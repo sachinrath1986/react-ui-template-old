@@ -1,6 +1,6 @@
 import { IntlProvider } from "react-intl";
 
-import enMessages from "./messages/en";
+import enMessages from "./messages/en.json";
 
 const allMessages = {
     en: enMessages

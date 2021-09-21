@@ -10,7 +10,7 @@ const Brand = () => {
 
     const dispatch = useDispatch();
 
-    const isSideBarCollapsed = useSelector(state => state.app.isSidebarCollapsed);
+    const isSideBarCollapsed = useSelector((state: any) => state.app.isSidebarCollapsed);
 
     const toggleCollapse = () => {
         dispatch(setIsSidebarCollapsed(!isSideBarCollapsed));

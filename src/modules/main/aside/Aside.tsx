@@ -9,7 +9,7 @@ const Aside = () => {
   const history = useHistory();
 
   const isSideBarCollapsed = useSelector(
-    (state) => state.app.isSidebarCollapsed
+    (state: any) => state.app.isSidebarCollapsed
   );
 
   const logout = () => {

@@ -9,10 +9,10 @@ const AsideMenu = () => {
 
     useEffect(() => {
         dispatch(fetchSidebarMenu());
-    }, []);
+    }, [dispatch]);
 
 
-    const menus = useSelector(state => state.app.menus) || [];
+    const menus = useSelector((state: any) => state.app.menus) || [];
 
     return (
         <div className="aside-menu">
